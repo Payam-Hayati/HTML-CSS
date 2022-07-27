@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Learning FlexBox</title>
+
+    <style>
+        body {
+    background: #1B1B1B;
+    color: #CCC;
+}
+
+img {
+    opacity: 0.7;
+}
+
+@media(min-width:768px){
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+    
+    /*
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+    align-items: flex-end; */
+}
+
+.container-1 div {
+    border: solid 1px #CCC;
+    padding: 10px;
+}
+
+.box-1 {
+    /* flex:1;
+    order:2; */
+    
+    flex-basis: 20%; /* equal to width:20% */
+}
+
+.box-2 {
+    
+    width: 20%;
+}
+
+.box-3 {
+    
+    width: 20%;
+
+}
+}
+    </style>
+</head>
+<body>
+    <h1>Flex Properties</h1>
+    <hr />
+
+    <div class="container-1">
+        <div class="box-1">
+            <h3>Box One</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus molestiae qui totam dolore tempora nihil. Consequatur eaque eveniet eum quo consequuntur aut distinctio ullam corporis dolor? Itaque obcaecati quisquam consequuntur.</p>
+        </div>
+
+        <div class="box-2">
+            <h3>Box Two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus molestiae qui totam dolore tempora nihil. Consequatur eaque eveniet eum quo consequuntur aut distinctio ullam corporis dolor? Itaque obcaecati quisquam consequuntur.</p>
+        </div>
+
+        <div class="box-3">
+            <h3>Box Three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus molestiae qui totam dolore tempora nihil. Consequatur eaque eveniet eum quo consequuntur aut distinctio ullam corporis dolor? Itaque obcaecati quisquam consequuntur.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<hr />
+
+    <img src="flex-properties.png" alt="flex-properties" width="500" height="300" />
+</body>
+</html>
